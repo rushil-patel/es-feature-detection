@@ -15,6 +15,7 @@
     "strictNullChecks": true,
     "declaration": true,
     "paths": {
+      "~/*": ["./*"],
       "~tests/*": ["./tests/*"]
     }
   },
