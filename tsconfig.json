@@ -11,11 +11,10 @@
     "allowJs": false,
     "checkJs": false,
     "baseUrl": ".",
-    "outDir": ".",
+    "outDir": "./dist",
     "strictNullChecks": true,
     "declaration": true,
     "paths": {
-      "~/*": ["./src/*"],
       "~tests/*": ["./tests/*"]
     }
   },

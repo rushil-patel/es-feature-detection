@@ -1,19 +1,19 @@
 // Built-ins
-import ArrayIncludes from '~/builtins/Array.prototype.includes';
-import Float32ArrayIncludes from '~/builtins/Float32Array.prototype.includes';
-import Float64ArrayIncludes from '~/builtins/Float64Array.prototype.includes';
-import Int8ArrayIncludes from '~/builtins/Int8Array.prototype.includes';
-import Int16ArrayIncludes from '~/builtins/Int16Array.prototype.includes';
-import Int32ArrayIncludes from '~/builtins/Int32Array.prototype.includes';
-import Uint8ArrayIncludes from '~/builtins/Uint8Array.prototype.includes';
-import Uint8ClampedArrayIncludes from '~/builtins/Uint8ClampedArray.prototype.includes';
-import Uint16ArrayIncludes from '~/builtins/Uint16Array.prototype.includes';
-import Uint32ArrayIncludes from '~/builtins/Uint32Array.prototype.includes';
+import ArrayIncludes from './builtins/Array.prototype.includes';
+import Float32ArrayIncludes from './builtins/Float32Array.prototype.includes';
+import Float64ArrayIncludes from './builtins/Float64Array.prototype.includes';
+import Int8ArrayIncludes from './builtins/Int8Array.prototype.includes';
+import Int16ArrayIncludes from './builtins/Int16Array.prototype.includes';
+import Int32ArrayIncludes from './builtins/Int32Array.prototype.includes';
+import Uint8ArrayIncludes from './builtins/Uint8Array.prototype.includes';
+import Uint8ClampedArrayIncludes from './builtins/Uint8ClampedArray.prototype.includes';
+import Uint16ArrayIncludes from './builtins/Uint16Array.prototype.includes';
+import Uint32ArrayIncludes from './builtins/Uint32Array.prototype.includes';
 
 // Syntax
-import exponentiationOperator from '~/syntax/exponentiationOperator';
-import nestedRestDestructuring from '~/syntax/nestedRestDestructuring';
-import restParameterDestructuring from '~/syntax/restParameterDestructuring';
+import exponentiationOperator from './syntax/exponentiationOperator';
+import nestedRestDestructuring from './syntax/nestedRestDestructuring';
+import restParameterDestructuring from './syntax/restParameterDestructuring';
 
 
 

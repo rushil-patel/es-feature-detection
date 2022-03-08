@@ -1,4 +1,4 @@
-import allOk from '~/utils/allOk';
+import allOk from '~/src/utils/allOk';
 
 
 

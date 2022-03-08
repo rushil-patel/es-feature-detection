@@ -1,4 +1,4 @@
-import testExpression from '~/utils/testExpression';
+import testExpression from '~/src/utils/testExpression';
 
-export const expression = '/(?<!a)b(?<=b)c/';
+export const expression = '~/src/(?<!a)b(?<=b)c/';
 export default () => testExpression(expression);

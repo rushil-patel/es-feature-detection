@@ -2,24 +2,17 @@
   "name": "es-feature-detection",
   "version": "3.0.1",
   "description": "ECMAScript feature and API detection",
-  "main": "index.js",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
   "sideEffects": false,
   "scripts": {
     "test": "npm run build:tests && jest",
     "test:coverage": "npm t -- --collectCoverage",
     "test:nobuild": "jest",
-    "build": "npm run build:index && npm run compile",
-    "build:index": "./bin/build-index.sh",
-    "build:tests": "./bin/build-tests.sh",
+    "build": "parcel build && npm run compile",
     "compile": "tsc -p ./src/tsconfig.json",
     "typecheck": "tsc -p ./tsconfig.build.json --noEmit",
-    "clean": "npm run clean:compile && npm run clean:index && npm run clean:tests",
-    "clean:empty": "rmdir $(find -maxdepth 1 -path './utils' -o -path './dom' -o -path './localization' -o -path './syntax' -o -path './builtins' -type d -empty)",
-    "clean:compile": "tsc -b src --clean && npm run clean:empty",
-    "clean:index": "./bin/clean-index.sh",
-    "clean:tests": "./bin/clean-tests.sh",
     "prepublishOnly": "npm run build",
-    "postpublish": "npm run clean",
     "lint": "eslint **/*.ts"
   },
   "repository": {
@@ -67,6 +60,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-standard": "^5.0.0",
     "jest": "^27.4.5",
+    "parcel": "^2.3.2",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4"
   }
